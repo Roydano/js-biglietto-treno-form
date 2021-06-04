@@ -21,15 +21,15 @@
             <section>
                 <div class="ticket_container">
                     <!-- inizio titolo sezione -->
-                    <div class="row">
+                    <div class="row txt_center">
                         <h2>calcola il prezzo del tuo biglietto</h2>
                     </div>
                     <!-- fine titolo sezione -->
 
                     <!-- inizio sezione input dati -->
                     <div class="row">
-                        <div class="ticket_generator">
 
+                        <div class="ticket_generator">
                             <!-- input nome e cognome -->
                             <div class="input_container">
                                 <label for="nome">Nome Cognome</label>
@@ -51,16 +51,66 @@
                                 <input type="text" id="eta" value="">
                             </div>
                             <!-- fine input età -->
-                           
                         </div>
                     </div>
-                    <!-- fine sezione input dat -->
+
+                    <div class="row">
+                        <div class="btn_container">
+                            <button>Genera</button>
+                            <button>Annulla</button>
+                        </div>
+                    </div>
+                    <!-- fine sezione input dati -->
                 </div>
             </section>
             <!-- fine sezione per calcolare il prezzo del biglietto -->
 
             <!-- inizio sezione biglietto ultimato -->
-            <section></section>
+            <section>
+
+                <div class="ticket_container">
+                    <!-- inizio titolo sezione -->
+                    <div class="row txt_center">
+                        <h2>calcola il prezzo del tuo biglietto</h2>
+                    </div>
+                    <!-- fine titolo sezione -->
+
+                    <!-- inizio sezione output dati -->
+                    <div class="row">
+
+                        <div class="ticket_output">
+                            <div class="row">
+                                <h3>Dettaglio passeggeri</h3>
+                            </div>
+                            <div class="row output">
+                                <div class="passeggero">
+                                    <h3>Nome passeggero</h3>
+                                    <div id="output_nome"></div>
+                                </div>
+                                <div class="offerta">
+                                    <h4>Offerta</h4>
+                                    <div id="output_offerta"></div>
+                                </div>
+                                <div class="carrozza">
+                                    <h4>Carrozza</h4>
+                                    <div id="output_carrozza"></div>
+                                </div>
+                                <div class="cp">
+                                    <h4>Codice CP</h4>
+                                    <div id="output_cp"></div>
+                                </div>
+                                <div class="prezzo_ticket">
+                                    <h4>Costo biglietto</h4>
+                                    <div id="output_prezzo"></div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                    </div>
+                    <!-- fine sezione output dati -->
+                </div>
+
+            </section>
             <!-- fine sezione biglietto ultimato -->
         </div>
         <!-- fine contenitore sezioni per generare il ticket -->

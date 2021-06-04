@@ -15,6 +15,23 @@ body{
 h2{
     color: white;
     text-transform: uppercase;
+    padding-top: 20px;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+.txt_center{
+    text-align: center;
+}
+
+label{
+    color: #b91450;
+}
+
+input{
+    border: 1px solid #b91450;
 }
 
 /* MAIN */
@@ -36,24 +53,79 @@ section .ticket_generator{
     background-color: white;
     display: flex;
     justify-content: space-between;
+    padding: 2% 10%;
+    margin-top: 20px;
 }
 
-
-
-
-
-/* classe debug */
-.ticket_container{
-    height: 300px;
-}
-
-.debug .input_container{
-    height: 100px;
-    background-color: yellow;
-    border: 1px solid black;
+.input_container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
+.btn_container{
+    text-align: center;
+    background-color: white;
+}
+
+.btn_container{
+    padding: 20px 0;
+}
+
+
+section .ticket_output{
+    background-color: white;
+    padding: 20px;
+}
+
+table{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row.output{
+    width: calc((100% / 12) * 12);
+    display: flex;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+
+
+/* CLASSE DEBUG */
+
+
+/* .ticket_container{
+    height: 300px;
+} */
+
+
+.passeggero{
+    height: 100px;
+    width: calc((100% / 12) * 4);
+    background-color: grey;
+}
+
+.offerta{
+    height: 100px;
+    width: calc((100% / 12) * 3);
+    background-color: orange;
+}
+
+.carrozza{
+    height: 100px;
+    width: calc((100% / 12) * 3);
+    background-color: green;
+}
+
+.cp{
+    height: 100px;
+    width: calc((100% / 12) * 1);
+    background-color: blue;
+}
+
+.prezzo_ticket{
+    height: 100px;
+    width: calc((100% / 12) * 1);
+    background-color: lime;
+}
