@@ -10,15 +10,53 @@
 
     <title>Biglietto treno</title>
 </head>
-<body>
+<body class="debug">
     
     <!-- inizio main -->
     <main>
         <!-- inizio contenitore generatore biglietto -->
-        <div class="ticket_container">
+        <div class="container">
 
             <!-- inizio sezione per calcolare il prezzo del biglietto -->
-            <section></section>
+            <section>
+                <div class="ticket_container">
+                    <!-- inizio titolo sezione -->
+                    <div class="row">
+                        <h2>calcola il prezzo del tuo biglietto</h2>
+                    </div>
+                    <!-- fine titolo sezione -->
+
+                    <!-- inizio sezione input dati -->
+                    <div class="row">
+                        <div class="ticket_generator">
+
+                            <!-- input nome e cognome -->
+                            <div class="input_container">
+                                <label for="nome">Nome Cognome</label>
+                                <input type="text" id="nome" value="">
+                            </div>
+                            <!-- fine input nome e cognome -->
+
+                            <!-- input km -->
+                            <div class="input_container">
+                                <label for="km">Km da percorrere</label>
+                                <input type="text" id="km" value="">
+                            </div>
+                            <!-- fine input km -->
+
+
+                             <!-- input età -->
+                             <div class="input_container">
+                                <label for="eta">Fascia d'et&agrave;</label>
+                                <input type="text" id="eta" value="">
+                            </div>
+                            <!-- fine input età -->
+                           
+                        </div>
+                    </div>
+                    <!-- fine sezione input dat -->
+                </div>
+            </section>
             <!-- fine sezione per calcolare il prezzo del biglietto -->
 
             <!-- inizio sezione biglietto ultimato -->

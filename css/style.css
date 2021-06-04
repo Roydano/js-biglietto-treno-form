@@ -1,5 +1,59 @@
+/* COMMON */
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h2{
+    color: white;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+.container{
+    background-color: #b91450;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* sezione 1 - ticket generator */
+
+section .ticket_container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section .ticket_generator{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* classe debug */
+.ticket_container{
+    height: 300px;
+}
+
+.debug .input_container{
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
