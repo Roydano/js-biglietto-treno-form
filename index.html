@@ -10,7 +10,7 @@
 
     <title>Biglietto treno</title>
 </head>
-<body class="debug">
+<body>
     
     <!-- inizio main -->
     <main>
@@ -40,7 +40,7 @@
                             <!-- input km -->
                             <div class="input_container">
                                 <label for="km">Km da percorrere</label>
-                                <input type="text" id="km" value="">
+                                <input type="number" min="1" id="km" value="">
                             </div>
                             <!-- fine input km -->
 
@@ -48,7 +48,11 @@
                              <!-- input età -->
                              <div class="input_container">
                                 <label for="eta">Fascia d'et&agrave;</label>
-                                <input type="text" id="eta" value="">
+                                <select id="eta">
+                                    <option value="minorenne">Minorenne</option>
+                                    <option value="maggiorenne">Maggiorenne</option>
+                                    <option value="over65">Over 65</option>
+                                </select>
                             </div>
                             <!-- fine input età -->
                         </div>
@@ -56,8 +60,8 @@
 
                     <div class="row">
                         <div class="btn_container">
-                            <button>Genera</button>
-                            <button>Annulla</button>
+                            <button id="genera">Genera</button>
+                            <button id="annulla">Annulla</button>
                         </div>
                     </div>
                     <!-- fine sezione input dati -->
@@ -66,12 +70,12 @@
             <!-- fine sezione per calcolare il prezzo del biglietto -->
 
             <!-- inizio sezione biglietto ultimato -->
-            <section>
+            <section id="ticket" class="hidden">
 
                 <div class="ticket_container">
                     <!-- inizio titolo sezione -->
                     <div class="row txt_center">
-                        <h2>calcola il prezzo del tuo biglietto</h2>
+                        <h2>il tuo biglietto</h2>
                     </div>
                     <!-- fine titolo sezione -->
 
@@ -84,22 +88,22 @@
                             </div>
                             <div class="row output">
                                 <div class="passeggero">
-                                    <h3>Nome passeggero</h3>
-                                    <div id="output_nome"></div>
+                                    <h4 class="upcase">Nome passeggero</h3>
+                                    <div id="output_nome" class="size"></div>
                                 </div>
-                                <div class="offerta">
+                                <div class="output_dati">
                                     <h4>Offerta</h4>
                                     <div id="output_offerta"></div>
                                 </div>
-                                <div class="carrozza">
+                                <div class="output_dati">
                                     <h4>Carrozza</h4>
                                     <div id="output_carrozza"></div>
                                 </div>
-                                <div class="cp">
+                                <div class="output_dati">
                                     <h4>Codice CP</h4>
                                     <div id="output_cp"></div>
                                 </div>
-                                <div class="prezzo_ticket">
+                                <div class="output_dati">
                                     <h4>Costo biglietto</h4>
                                     <div id="output_prezzo"></div>
                                 </div>
