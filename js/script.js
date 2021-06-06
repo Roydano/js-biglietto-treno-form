@@ -1,3 +1,5 @@
+// COMPORTAMENTI AL CLICK ANNULLA
+
 var annulla = document.getElementById('annulla');
 
 annulla.addEventListener("click", function(){
@@ -14,14 +16,12 @@ annulla.addEventListener("click", function(){
 
 
 
-
+// COMPORTAMENTI AL CLICK GENERA
 
 var genera = document.getElementById('genera');
 
 
 genera.addEventListener("click", function(){
-
-    document.getElementById('ticket').className = 'show';
 
     // memorizzare dati di input
 
@@ -43,6 +43,11 @@ genera.addEventListener("click", function(){
         document.km.focus();
         return false;
     }
+
+
+    // comparsa del biglietto generato al click su genera
+
+    document.getElementById('ticket').className = 'show';
 
     var carrozzaRandom = Math.floor(Math.random() * 9) + 1;
 
